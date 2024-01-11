@@ -6,4 +6,5 @@
     </style>
 
     <style name="Theme.SpottyGlobeApp" parent="Base.Theme.SpottyGlobeApp" />
+
 </resources>
