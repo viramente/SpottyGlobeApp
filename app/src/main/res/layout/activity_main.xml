@@ -16,24 +16,22 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:weightSum="2"
-    >
+        app:layout_constraintBottom_toBottomOf="parent">
+
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginEnd="2dp"
-            android:src="@drawable/ic_back"
-            android:text="КАТЕГОРИИ"
-            android:textSize="14dp"
             android:background="@drawable/shape_drawable_blue"
+            android:text="@string/button_categories"
+            android:textSize="14dp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/montserrat_alternates_bold"
             android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-             >
+            android:layout_weight="1"/>
 
-        </Button>
-
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
 
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -45,28 +43,29 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="ИЗБРАННОЕ"
+                android:text="@string/button_favorites"
+                android:textAllCaps="true"
                 android:textColor="#FFFFFF"
                 android:textSize="14dp"
+                android:fontFamily="@font/montserrat_alternates_bold"
+                android:gravity="center_vertical"
                 android:layout_marginStart="18dp"
-                android:gravity="center">
+                app:layout_constraintStart_toStartOf="parent">
 
             </TextView>
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:src="@drawable/ic_heart"
-                android:layout_gravity="center"
                 android:layout_marginEnd="14dp"
-                >
+                android:contentDescription="@string/button_icon_heart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:gravity="end|center">
             </ImageView>
 
-        </LinearLayout>
-
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
