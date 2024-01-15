@@ -7,6 +7,10 @@ android {
     namespace = "lv.viramente.spottyglobeapp"
     compileSdk = 34
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "lv.viramente.spottyglobeapp"
         minSdk = 24
